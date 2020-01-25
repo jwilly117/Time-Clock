@@ -20,16 +20,61 @@
 
 </head>
 <body>
-
-    <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-          <h1 class="display-4"> Time Clock Demonstration </h1>
-          <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-        </div>
+    <br>
+    <div class="jumbotron">
+        <h1 class="display-4">Employee Timecard</h1>
+        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+      
       </div>
       <hr>
 
-      <!--  -->
+      <h3>Enter your Name and hit Punch</h3>
+
+      <!-- Input Groups  -->
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroup-sizing-default">Username</span>
+        </div>
+        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+      </div>
+
+      <!-- Buttons -->
+      <button type="button" class="btn btn-secondary">Secondary</button>
+
+      <hr>
+      <br>
+
+      <!-- Table of Punches -->
+      <table class="table table-dark">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
 
 
 
@@ -51,6 +96,8 @@
         firebase.initializeApp(firebaseConfig);
         firebase.analytics();
       </script>
+
+      <script src="app.js"></script>
     
 </body>
 </html>
